@@ -10,7 +10,10 @@
           var y = 0;
           var z = 0;
           
-          while (initialize == 1) {
+          if (initialize == 1) {
+            setInterval(update, 1000)
+          }
+          function update() {
           document.getElementById("sp1").innerHTML = x;
           document.getElementById("sp2").innerHTML = y;
           document.getElementById("sp3").innerHTML = z;
