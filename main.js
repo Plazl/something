@@ -26,6 +26,6 @@
 
 
    function changeZ() { 
-   Z = Z.add(addMult);
-       document.getElementById("sp3").innerHTML = Z;
+   z = z.add(addMult);
+       document.getElementById("sp3").innerHTML = z;
    }
