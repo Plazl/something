@@ -4,8 +4,8 @@
           var z = new Decimal(500);
           
           if (initialize == 1) {
-            if (interval !== setInterval(update, 1000));
-            var interval = setInterval(update, 1000);
+            if (interval !== setInterval(update, 450));
+            var interval = setInterval(update, 450);
           }
           function update() {
           document.getElementById("sp1").innerHTML = x;
