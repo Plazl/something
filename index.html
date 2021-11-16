@@ -27,10 +27,9 @@
                  addMult.mag = 500;
               } else if (addMult.mag == 500) {
                  addMult.mag = 1000;
-              } else if (addMult.mag < 1e308) {
+              } else (addMult.mag < 1e308) {
                  addMult.mag = addMult.mag * 100
-              } else {
-                 addMult.mag = addMult.mag * 1000 
+              }
               }
              }
             
