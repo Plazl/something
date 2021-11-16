@@ -14,23 +14,23 @@
             var addMult = new Decimal (1)
             function changeAddMult() {
              if (addMult < 5) {   
-                 addMult = 10;
-              } else if (addMult == 10) {
-                 addMult = 25;
-              } else if (addMult == 25) {
-                 addMult = 50;
-              } else if (addMult == 50) {
-                 addMult = 100;
-              } else if (addMult == 100) {
-                 addMult = 250;
-              } else if (addMult == 250) {
-                 addMult = 500;
-              } else if (addMult == 500) {
-                 addMult = 1000;
-              } else if (addMult < 1e308) {
-                 addMult = addMult * 1000
+                 addMult.mag = 10;
+              } else if (addMult.mag == 10) {
+                 addMult.mag = 25;
+              } else if (addMult.mag == 25) {
+                 addMult.mag = 50;
+              } else if (addMult.mag == 50) {
+                 addMult.mag = 100;
+              } else if (addMult.mag == 100) {
+                 addMult.mag = 250;
+              } else if (addMult.mag == 250) {
+                 addMult.mag = 500;
+              } else if (addMult.mag == 500) {
+                 addMult.mag = 1000;
+              } else if (addMult.mag < 1e308) {
+                 addMult.mag = addMult.mag * 100
               } else {
-                 addMult = addMult.mag * 1000 
+                 addMult.mag = addMult.mag * 1000 
               }
              }
             
