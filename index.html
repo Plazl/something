@@ -11,7 +11,7 @@
         <button onClick="changeZ()">Increase Z Value.</button>
         <button onClick="changeAddMult()">Increase the amount each variable is increased by.</button>
         <script>
-            var addMult = 1
+            var addMult = new Decimal (1)
             function changeAddMult() {
              if (addMult < 5) {   
                  addMult = 10;
@@ -27,8 +27,10 @@
                  addMult = 500;
               } else if (addMult == 500) {
                  addMult = 1000;
-              } else {
+              } else if (addMult < 1e308) {
                  addMult = addMult * 1000
+              } else {
+                 addMult.mag = addMult.mag * 1000 
               }
              }
             
